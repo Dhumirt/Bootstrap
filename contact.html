@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamZone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .navbar-brand {
+            color: #ff6f61 !important;
+        }
+        .nav-link {
+            color: #ffffff !important;
+        }
+        .nav-link:hover {
+            color: #ff6f61 !important;
+        }
+        .card {
+            background-color: #1e1e1e;
+        }
+        .card-title {
+            color: #ff6f61;
+        }
+        .btn-watch {
+            background-color: #ff6f61;
+            color: #ffffff;
+        }
+        .btn-watch:hover {
+            background-color: #ff3d3d;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-film"></i> StreamZone
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webseries.html">Web Series</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                
+            <a class="nav-link theme_color rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#login">
+                <i class="bi bi-person fs-4"></i>
+        </div>
+    </div>
+</nav>
+
+<!--login internal-->
+
+
+<div class="modal fade" id="login">
+    <div class="modal-dialog ">
+        <div class="modal-content bg-dark border border-1 border-warning">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-light">Login</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="m-2">
+                  <label class="form-label text-warning">User Name</label>
+                  <input type="email" placeholder="abs" class="form-control">
+                </div>
+                <div class="m-2">
+                  <label class="form-label text-warning">User password</label>
+                  <input type="password" placeholder="abc@123" class="form-control">
+                </div>
+                <div class="m-2">
+                    <label class="form-label text-warning">Email</label>
+                    <input type="email" placeholder="Abc@gmail.com" class="form-control">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+              <button class="btn btn-warning">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-3">
+    <div class="row ">
+        <div class="col-md-6 mb-4 " style="margin-top: 100px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+            <h2 class="text-center text-warning mb-4">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label text-warning">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label text-warning">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label text-warning">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label text-warning">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                </div>
+                
+            </form>
+            <button type="submit" class="btn btn-warning w-10 ">Submit</button>
+            </div>  
+             <div class="col-md-6 mb-4 " style="margin-top: 100px;">
+            <h2 class="text-center text-warning mb-4">Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1234567890123!2d144.9630579153165!3d-37.81410797975123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f123456%3A0x123456789abcdef0!2sYour%20Location%20Name!5e0!3m2!1sen!2sus!4v1631234567890" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        </div>
+        
+    </div>
+   
+    
+</div>
+
+
+<div class="container mt-5  ">
+    <h2 class="text-warning text-center mb-4">Follow Us</h2>
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <a href="#" class="text-decoration-none text-warning"><i class="bi bi-facebook fs-1"></i></a>
+        </div>
+        <div class="col-md-4 text-center">
+            <a href="#" class="text-decoration-none text-warning"><i class="bi bi-twitter fs-1"></i></a>
+        </div>
+        <div class="col-md-4 text-center">
+            <a href="#" class="text-decoration-none text-warning"><i class="bi bi-instagram fs-1"></i></a>
+        </div>
+        
+    </div>
+
+</div>
+</body>
+</html>

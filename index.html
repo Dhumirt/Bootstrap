@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamZone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .navbar-brand {
+            color: #ff6f61 !important;
+        }
+        .nav-link {
+            color: #ffffff !important;
+        }
+        .nav-link:hover {
+            color: #ff6f61 !important;
+        }
+        .card {
+            background-color: #1e1e1e;
+        }
+        .card-title {
+            color: #ff6f61;
+        }
+        .btn-watch {
+            background-color: #ff6f61;
+            color: #ffffff;
+        }
+        .btn-watch:hover {
+            background-color: #ff3d3d;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-film"></i> StreamZone
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="webseries.html">Web Series</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact us</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                
+                
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                
+            <a class="nav-link theme_color rounded-pill pe-3 ps-3 text-center m-2" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#login">
+                <i class="bi bi-person fs-4"></i>
+        </div>
+    </div>
+</nav>
+
+<!--login internal-->
+
+
+<div class="modal fade" id="login">
+    <div class="modal-dialog ">
+        <div class="modal-content bg-dark border border-1 border-warning">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-light">Login</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="m-2">
+                  <label class="form-label text-warning">User Name</label>
+                  <input type="email" placeholder="abs" class="form-control">
+                </div>
+                <div class="m-2">
+                  <label class="form-label text-warning">User password</label>
+                  <input type="password" placeholder="abc@123" class="form-control">
+                </div>
+                <div class="m-2">
+                    <label class="form-label text-warning">Email</label>
+                    <input type="email" placeholder="Abc@gmail.com" class="form-control">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+              <button class="btn btn-warning">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hero Section -->
+<div class="container mt-5 pt-5 text-center">
+    <h1 class="display-4 text-warning">Welcome to StreamZone</h1>
+    <p class="lead bi bi-">Your one destination for movies and web series.</p>
+    <button class="btn btn-watch btn-lg">Start Watching</button>
+</div>
+
+<!-- Featured Section -->
+<div class="container mt-5">
+    <h2 class="text-warning mb-4 "> Contents  </h2>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/movie1.jpg" class="card-img-top" alt="Movie 1" >
+                <div class="card-body">
+                    <h5 class="card-title">Animal</h5>
+                    <p class="card-text text-light">The movie "Animal" is a Hindi-language action thriller about a son's destructive path after his father's assassination attempt, exploring their strained relationship. The film is directed by Sandeep Reddy Vanga and stars Ranbir Kapoor. .</p>
+                    <button class="btn btn-watch">Watch Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/movie2.jpg" class="card-img-top" alt="Movie 2">
+                <div class="card-body">
+                    <h5 class="card-title">Pushpa 2: The Rule</h5>
+                    <p class="card-text text-light">Pushpa 2: The Rule is an Indian Telugu action drama sequel following Pushpa Raj's rise. It stars Allu Arjun, Rashmika Mandanna, and Fahadh Faasil. The movie centers on Pushpa's fight against Inspector Shekhawat and other rivals. 
+                        .
+                    </p>
+                    <button class="btn btn-watch">Watch Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/series1.jpg" class="card-img-top" alt="Series 1">
+                <div class="card-body">
+                    <h5 class="card-title">Money Heist</h5>
+                    <p class="card-text text-light"> In the heist drama Money Heist, a mastermind, the Professor, leads a team to rob the Royal Mint of Spain, holding hostages and manipulating the police. They plan and execute a complex operation, aiming for a monumental haul. </p>
+                    <button class="btn btn-watch">Watch Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/series2.jpg" class="card-img-top" alt="Series 2" style="height: 145px;">
+                <div class="card-body">
+                    <h5 class="card-title">Stanger Things</h5>
+                    <p class="card-text text-light">In the 1980s, a group of kids in Hawkins, Indiana, face supernatural threats when a boy vanishes and a mysterious girl with powers appears. They uncover a government lab and fight creatures from the Upside Down.</p>
+                    <button class="btn btn-watch">Watch Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white py-3 mt-5">
+    <p>&copy; 2025 StreamZone. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

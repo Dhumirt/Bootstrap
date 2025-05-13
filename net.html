@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamFlix</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #141414;
+            color: #ffffff;
+        }
+        .navbar-brand {
+            color: #e50914 !important;
+            font-weight: bold;
+        }
+        .nav-link {
+            color: #ffffff !important;
+        }
+        .nav-link:hover {
+            color: #e50914 !important;
+        }
+        .hero-section {
+            background-image: url('img/hero.jpg'); /* Replace with your hero image */
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 4rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px #000;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px #000;
+        }
+        .btn-watch {
+            background-color: #e50914;
+            color: #ffffff;
+            font-size: 1.2rem;
+        }
+        .btn-watch:hover {
+            background-color: #b20710;
+        }
+        .category-title {
+            color: #e50914;
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: #1e1e1e;
+        }
+        .card-title {
+            color: #ffffff;
+        }
+        .footer {
+            background-color: #000;
+            color: #ffffff;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">StreamFlix</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My List</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <div>
+        <h1>Unlimited Movies, TV Shows, and More</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <button class="btn btn-watch btn-lg">Get Started</button>
+    </div>
+</div>
+
+<!-- Categories -->
+<div class="container mt-5">
+    <h2 class="category-title">Trending Now</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/movie1.jpg" class="card-img-top" alt="Movie 1">
+                <div class="card-body">
+                    <h5 class="card-title">Movie Title 1</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/movie2.jpg" class="card-img-top" alt="Movie 2">
+                <div class="card-body">
+                    <h5 class="card-title">Movie Title 2</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/movie3.jpg" class="card-img-top" alt="Movie 3">
+                <div class="card-body">
+                    <h5 class="card-title">Movie Title 3</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/movie4.jpg" class="card-img-top" alt="Movie 4">
+                <div class="card-body">
+                    <h5 class="card-title">Movie Title 4</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <h2 class="category-title">Top Picks for You</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/movie5.jpg" class="card-img-top" alt="Movie 5">
+                <div class="card-body">
+                    <h5 class="card-title">Movie Title 5</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/movie6.jpg" class="card-img-top" alt="Movie 6">
+                <div class="card-body">
+                    <h5 class="card-title">Movie Title 6</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/movie7.jpg" class="card-img-top" alt="Movie 7">
+                <div class="card-body">
+                    <h5 class="card-title">Movie Title 7</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/movie8.jpg" class="card-img-top" alt="Movie 8">
+                <div class="card-body">
+                    <h5 class="card-title">Movie Title 8</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <p>&copy; 2025 StreamFlix. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
